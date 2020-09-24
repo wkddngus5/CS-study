@@ -21,6 +21,12 @@
 	```
 	- EventListener can be overwrited. And bubbling and capturing are triggered. binding is also easy. But IE 6~7 are not support.
 
+5. Properly size images
+	- Fit the image's size to rendered image's size. If not, It wasts bytes and slow down page load time.
+	- Serve responsive images.
+	- [sharp](https://www.npmjs.com/package/sharp) and [ImageMagick](https://www.imagemagick.org/script/index.php) 
+	- Use Image CDNs
+
 
 
 
