@@ -48,6 +48,18 @@
 		- The basic elements of OOP are objects and methods
 		- OOP is used when there are many things with few operations
 
+7. Promise
+	- Promise is a proxy(define new actions in basic methods) for a value not necessary known when the promise is created.
+	- It supports to use asynchronous methods like synchronous's.
+	- There are 3 states.
+		- fist, initial state is the 'pending'
+		- If the promise complete succesfully, it gonna be 'fulfilled' state in 'then' method.
+		- On the other hand, if the promise fails, the state will be 'rejected' in 'catch'.
+	- Promise.all: It returns a Promise that all itearable Promise's process are done. If a promises is rejected, It also reject the same reason.
+	- Promise.race: It returns a Promise that the fastest promise in iterable promises. It follows the fastest promise's resolve or reject.
+
+	
+
 
 > References
 > 

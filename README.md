@@ -8,5 +8,6 @@ study computer science
 	4. Diffrence between 'EventHandler' and 'EventListener'
 	5. Properly size images
 	6. Functional Programming vs Object Oriented Programing
+	7. Promise
    
 # DataStructure
