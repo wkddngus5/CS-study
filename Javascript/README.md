@@ -58,7 +58,19 @@
 	- Promise.all: It returns a Promise that all itearable Promise's process are done. If a promises is rejected, It also reject the same reason.
 	- Promise.race: It returns a Promise that the fastest promise in iterable promises. It follows the fastest promise's resolve or reject.
 
-	
+8. Generator
+	- Javascript engine	adopts asynchronous for performance.
+	- async/await are created based on Generator.
+	- To use iterable in object, you need to add \[Symbol.iterator\]() method.
+	- You can declare like 'function* foo'. The iterator suspend at each 'yield' statements. You can resume and get each values by using 'next()' method.
+	```
+		function* foo() {
+			yield 1;
+			yield 2;
+			yield 3;
+		}
+	```
+	- Generator function can use memory efficiently by using Lazy-Evaluation.
 
 
 > References
