@@ -58,6 +58,44 @@
 	- Promise.all: It returns a Promise that all itearable Promise's process are done. If a promises is rejected, It also reject the same reason.
 	- Promise.race: It returns a Promise that the fastest promise in iterable promises. It follows the fastest promise's resolve or reject.
 
+8. Generator
+	- Javascript engine	adopts asynchronous for performance.
+	- async/await are created based on Generator.
+	- To use iterable in object, you need to add \[Symbol.iterator\]() method.
+	- You can declare like 'function* foo'. The iterator suspend at each 'yield' statements. You can resume and get each values by using 'next()' method.
+	```
+		function* foo() {
+			yield 1;
+			yield 2;
+			yield 3;
+		}
+	```
+	- Generator function can use memory efficiently by using Lazy-Evaluation.
+
+  9. Prototype-based Object oriented Language
+  - All of JS objects are linked to parent object. They can use parent's property and method.
+  - 'Prototype' object is used to give to each objects created by constructor function.
+  - All JS objects have '[[prototype]]' internal slot. It's used to implement extending. The [[prototype]] object's property can be acceed by 'get', but not in 'set'.
+  - JS functions also have 'prototype' property. It's linked to parent object's prototype.
+  - Prototype chain: If there's no property or method in some object, it follow [[prototype]] and find parent's property or method.
+
+  10. 'Scope' and 'this'
+  - Scope is a rule to find reference target identifier
+  - Global scope can refer anywhere.
+  - Local scope(Functional-level scope) can refer just function self or children functions.
+  - Lexical scope: upper scope is determined by the declaration. 
+  - Immediate function: to remove global variables
+  - JS 'this' is changed according to the method calling the function.
+  - If some function is a property of object, it is called as a method. The 'this' in method binds to owner object.
+  - In constructor, new empty object will be created.
+  - The other cases, this will be window(global) and return it. We can set property and methods to there.
+
+  11. dynamic typed language and loosely typed language
+  - JS variables are set types when they are allocated. So we can allocate multiple types to one value.
+
+
+
+
 	
 
 
