@@ -18,7 +18,7 @@
   	```
 	  button.onclick = function() {...}
 	  button.addEventListener('click', function() {...})
-	```
+	  ```
 	- EventListener can be overwrited. And bubbling and capturing are triggered. binding is also easy. But IE 6~7 are not support.
 
 5. Properly size images
@@ -93,6 +93,14 @@
   11. dynamic typed language and loosely typed language
   - JS variables are set types when they are allocated. So we can allocate multiple types to one value.
 
+  12. localStorage vs sessionStorage
+   - SessionStorage consist data only same tab
+   - Both web storage objects connected to domain, protocol 
+   - Unlike cookies, they don't use the HTTP header so they can save bigger data.
+
+  13. call, bind, apply, arrow function
+    - Set the 'this' to first parameter.
+    - Arrow function doesn't bind 'this'. 
 
 
 
